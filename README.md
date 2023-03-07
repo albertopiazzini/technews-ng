@@ -19,6 +19,7 @@ External libraries:
 
 For local installation you will need node.js and angular cli, then open the project and run "ng serve" command on the console, and finally enjoy the app on http://localhost:4200/
 
-## Personal contact
+### Personal contact
 
+If you are interested in getting to know me better, you can contact me here: <a  href="mailto:albepiazzo@gmail.com"> albepiazzo@gmail.com</a>
 
