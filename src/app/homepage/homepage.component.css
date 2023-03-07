@@ -1,0 +1,84 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to top,
+    #cee3ff 40%,
+    rgba(255, 255, 255, 0.83) 100%
+  );
+}
+
+.loading-gif {
+  width: 80px;
+  margin: 20px;
+}
+.container h1 {
+  font-size: 50px;
+  margin-top: 30px;
+  font-family: robo;
+  color: rgb(255, 43, 43);
+}
+.gif {
+  margin-bottom: 20px;
+  width: 60px;
+}
+
+.box-news {
+  margin: 20px;
+  background-color: rgb(253, 253, 253);
+  padding: 15px;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.box-news h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.link {
+  margin-bottom: 20px;
+}
+.link span a {
+  text-decoration: none;
+}
+.link span a :hover {
+  color: rgb(255, 43, 43);
+}
+
+.link,
+.time {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 220px;
+  font-size: 19px;
+}
+
+.icon {
+  width: 40px;
+  margin-right: 15px;
+}
+
+.read-more-text {
+  font-style: italic;
+  margin: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 500px) {
+  .container h1 {
+    font-size: 35px;
+  }
+  .box-news {
+    width: 90%;
+  }
+}

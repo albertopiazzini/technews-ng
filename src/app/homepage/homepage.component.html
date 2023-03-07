@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>TECHNEWS</h1>
+  <img src="../assets/live.gif" alt="" class="gif" *ngIf="news.length !== 0" />
+
+  <div class="loading" *ngIf="news.length == 0">
+    <img src="./assets/loading-gif.gif" alt="loading gif" class="loading-gif" />
+  </div>
+  <div class="box-news" *ngFor="let new of news">
+    <h2>{{ new.title }}</h2>
+    <div class="link">
+      <img src="./assets/web.svg" alt="web-icon" class="icon" />
+      <span> <a href="{{ new.url }}" target="_blank"> READ NOW </a> </span>
+    </div>
+
+    <div class="time">
+      <img src="./assets/calendar.svg" alt="calendar-icon" class="icon" />
+      <span>{{ new.time * 1000 | date : "short" : "GMT" }}</span>
+    </div>
+  </div>
+
+  <span
+    class="read-more-text"
+    (click)="addNews()"
+    *ngIf="news.length < 500 && news.length !== 0"
+    >Read More ⇓
+  </span>
+</div>

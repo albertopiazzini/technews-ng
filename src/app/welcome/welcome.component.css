@@ -1,0 +1,114 @@
+.container {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  font-family: robo;
+  font-size: 50px;
+  margin-bottom: 30px;
+  color: rgb(32, 31, 31);
+}
+.live-gif {
+  width: 60px;
+  position: relative;
+  bottom: 35px;
+}
+p {
+  margin: 5px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  line-height: 13px;
+  color: rgb(44, 43, 43);
+}
+
+/* BUTTON STYLE */
+
+.button {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.button a {
+  color: white;
+  font-family: fast;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(240, 0, 0);
+  display: block;
+  position: relative;
+  padding: 15px 35px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #910000;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #910000;
+  box-shadow: inset 0 1px 0 #ffe5c4, 0 10px 0 #910000;
+
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 10px;
+  background-color: rgb(211, 0, 0);
+
+  -webkit-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #910000;
+  -moz-box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3pxpx 0 #910000;
+  box-shadow: inset 0 1px 0 #ffe5c4, inset 0 -3px 0 #910000;
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  background-color: #2b0000;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+hr {
+  color: lightgrey;
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  margin: 50px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-style: italic;
+  opacity: 0.8;
+  font-size: 13px;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 18px;
+}
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+  p {
+    font-size: 17px;
+  }
+}
