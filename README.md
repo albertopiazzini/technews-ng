@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.4.
 
-Here you can read all the tech news in real time, thanks to this <a href="https://github.com/HackerNews/API"> API. </a>
+In this project I developed an application to democratize the dissemination of information in the tech field through the use of the <a href="https://github.com/HackerNews/API"> Hacker News service. </a>
 
 To try the application immediately click <a href="https://technews-d6407.web.app"> HERE </a>
 
